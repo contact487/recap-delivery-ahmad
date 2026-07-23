@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recap Delivery — 2026-07-22</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#020617; color:#f8fafc; font-family:system-ui,-apple-system,sans-serif; padding:24px; min-height:100vh; -webkit-text-size-adjust:100%; }
+.container { max-width:850px; margin:0 auto; }
+.header { text-align:center; padding:32px 0 24px; }
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin-bottom:24px; }
+.card { background:#0f172a; border:1px solid #1e293b; border-radius:12px; padding:16px; text-align:center; }
+.card-value { font-size:28px; font-weight:800; color:#f8fafc; }
+.card-label { font-size:12px; color:#64748b; margin-top:4px; text-transform:uppercase; letter-spacing:0.5px; }
+.section-title { color:#94a3b8; font-size:14px; text-transform:uppercase; letter-spacing:1px; margin:24px 0 12px; font-weight:600; }
+.table-wrap { overflow-x:auto; }
+@media (max-width:640px) {
+    body { padding:12px; }
+    .header { padding:18px 0 14px; }
+    .header > div:nth-child(2) { font-size:20px !important; }
+    .cards { grid-template-columns:repeat(2,1fr); gap:8px; }
+    .card { padding:12px; }
+    .card .card-value, .cards .card div[style*="font-size:28px"] { font-size:22px !important; }
+    .section-title { margin:18px 0 10px; font-size:13px; }
+    .table-wrap { overflow-x:visible; }
+    .detail-table { background:transparent !important; border:none !important; }
+    .detail-table thead { display:none; }
+    .detail-table tbody, .detail-table tr, .detail-table td { display:block; width:100%; }
+    .detail-table tr { background:#0f172a; border:1px solid #1e293b; border-radius:10px; margin-bottom:10px; padding:10px 12px; }
+    .detail-table td { border-bottom:none !important; padding:6px 0 !important; text-align:left !important; }
+    .detail-table td::before { content:attr(data-label); display:block; font-size:10px; color:#64748b; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:3px; }
+    .detail-table td[data-label="Eleve"] { font-size:16px; padding-bottom:8px !important; border-bottom:1px solid #1e293b !important; margin-bottom:6px; }
+    .detail-table td[data-label="Eleve"]::before { display:none; }
+    .detail-table td[data-label="Video"] { text-align:right !important; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+        <div style="font-size:12px;color:#64748b;text-transform:uppercase;letter-spacing:2px;margin-bottom:8px">Recap Delivery</div>
+        <div style="font-size:24px;font-weight:800;color:#f8fafc;margin-bottom:4px">Moualimy</div>
+        <div style="font-size:14px;color:#64748b">Mercredi 22 juillet 2026</div>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <div class="card-value" style="color:#22c55e">14</div>
+            <div class="card-label">Cours donnes</div>
+        </div>
+        <div class="card">
+            <div class="card-value">4/5</div>
+            <div class="card-label">Profs actifs</div>
+        </div>
+        <div class="card">
+            <div class="card-value">14</div>
+            <div class="card-label">Eleves vus</div>
+        </div></div>
+
+    <div class="section-title">Repartition par prof</div>
+    <div style="display:flex;border-radius:8px;overflow:hidden;margin-bottom:8px"><div style="width:21.4%;background:#22c55e;height:32px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;font-weight:600;min-width:40px">3</div><div style="width:35.7%;background:#3b82f6;height:32px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;font-weight:600;min-width:40px">5</div><div style="width:28.6%;background:#f59e0b;height:32px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;font-weight:600;min-width:40px">4</div><div style="width:14.3%;background:#a855f7;height:32px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;font-weight:600;min-width:40px">2</div></div>
+    <div style="font-size:12px;color:#64748b;margin-bottom:24px"><span style="display:inline-flex;align-items:center;gap:4px;margin-right:14px"><span style="width:10px;height:10px;border-radius:2px;background:#22c55e;display:inline-block"></span>Salma Ragab: 3</span><span style="display:inline-flex;align-items:center;gap:4px;margin-right:14px"><span style="width:10px;height:10px;border-radius:2px;background:#3b82f6;display:inline-block"></span>Anis Messaoudi: 5</span><span style="display:inline-flex;align-items:center;gap:4px;margin-right:14px"><span style="width:10px;height:10px;border-radius:2px;background:#f59e0b;display:inline-block"></span>Toufik Elarrim: 4</span><span style="display:inline-flex;align-items:center;gap:4px;margin-right:14px"><span style="width:10px;height:10px;border-radius:2px;background:#a855f7;display:inline-block"></span>Mehdi Bourouaieh: 2</span><span style="display:inline-flex;align-items:center;gap:4px;margin-right:14px"><span style="width:10px;height:10px;border-radius:2px;background:#ec4899;display:inline-block"></span>Ahmed Elgazar: 0</span></div>
+
+    <div class="cards">
+        <div class="card">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+                <div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div>
+                <div style="font-size:16px;font-weight:700;color:#f8fafc">Salma Ragab</div>
+            </div>
+            <div style="font-size:28px;font-weight:800;color:#22c55e">3</div>
+            <span style="color:#22c55e;font-size:13px">3 cours</span>
+        </div>
+        <div class="card">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+                <div style="width:10px;height:10px;border-radius:50%;background:#3b82f6"></div>
+                <div style="font-size:16px;font-weight:700;color:#f8fafc">Anis Messaoudi</div>
+            </div>
+            <div style="font-size:28px;font-weight:800;color:#3b82f6">5</div>
+            <span style="color:#3b82f6;font-size:13px">5 cours</span>
+        </div>
+        <div class="card">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+                <div style="width:10px;height:10px;border-radius:50%;background:#f59e0b"></div>
+                <div style="font-size:16px;font-weight:700;color:#f8fafc">Toufik Elarrim</div>
+            </div>
+            <div style="font-size:28px;font-weight:800;color:#f59e0b">4</div>
+            <span style="color:#f59e0b;font-size:13px">4 cours</span>
+        </div>
+        <div class="card">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+                <div style="width:10px;height:10px;border-radius:50%;background:#a855f7"></div>
+                <div style="font-size:16px;font-weight:700;color:#f8fafc">Mehdi Bourouaieh</div>
+            </div>
+            <div style="font-size:28px;font-weight:800;color:#a855f7">2</div>
+            <span style="color:#a855f7;font-size:13px">2 cours</span>
+        </div>
+        <div class="card">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+                <div style="width:10px;height:10px;border-radius:50%;background:#ec4899"></div>
+                <div style="font-size:16px;font-weight:700;color:#f8fafc">Ahmed Elgazar</div>
+            </div>
+            <div style="font-size:28px;font-weight:800;color:#ec4899">0</div>
+            <span style="color:#64748b;font-size:13px">Aucun cours</span>
+        </div></div>
+
+    
+        <div class="section-title" style="color:#22c55e">Salma Ragab — 3 cours</div>
+        <div class="table-wrap">
+        <table class="detail-table" style="width:100%;border-collapse:collapse;background:#0f172a;border:1px solid #1e293b;border-radius:12px;overflow:hidden;margin-bottom:24px">
+            <thead>
+                <tr style="background:#1e293b">
+                    <th style="padding:10px 14px;text-align:left;color:#94a3b8;font-size:11px;text-transform:uppercase">Eleve</th>
+                    <th style="padding:10px 14px;text-align:left;color:#94a3b8;font-size:11px;text-transform:uppercase">Ce qui a ete vu</th>
+                    <th style="padding:10px 14px;text-align:center;color:#94a3b8;font-size:11px;text-transform:uppercase">Video</th>
+                </tr>
+            </thead>
+            <tbody><tr>
+                <td data-label="Eleve" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#f8fafc;font-weight:600">Mariama</td>
+                <td data-label="Ce qui a ete vu" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#94a3b8;font-size:13px">On a révisé le 1A</td>
+                <td data-label="Video" style="padding:12px 14px;border-bottom:1px solid #1e293b;text-align:center"><a href="https://fathom.video/share/kyV9vze2Lccitd3ufVfPk-d82JdWdySr" target="_blank" style="color:#22c55e;text-decoration:none;font-size:12px;font-weight:600">Voir</a></td>
+            </tr><tr>
+                <td data-label="Eleve" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#f8fafc;font-weight:600">Amandine</td>
+                <td data-label="Ce qui a ete vu" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#94a3b8;font-size:13px">On a révisé (الصلاة)</td>
+                <td data-label="Video" style="padding:12px 14px;border-bottom:1px solid #1e293b;text-align:center"><a href="https://fathom.video/share/dou87Qrn-YrC6M_SbEZ1RmiWcZKt1Gdt" target="_blank" style="color:#22c55e;text-decoration:none;font-size:12px;font-weight:600">Voir</a></td>
+            </tr><tr>
+                <td data-label="Eleve" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#f8fafc;font-weight:600">Nadia</td>
+                <td data-label="Ce qui a ete vu" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#94a3b8;font-size:13px">la lecture</td>
+                <td data-label="Video" style="padding:12px 14px;border-bottom:1px solid #1e293b;text-align:center"><a href="https://fathom.video/share/aguUMqwUo2yvBydCxS6EMZVhSqkgytrk" target="_blank" style="color:#22c55e;text-decoration:none;font-size:12px;font-weight:600">Voir</a></td>
+            </tr></tbody>
+        </table>
+        </div>
+        <div class="section-title" style="color:#3b82f6">Anis Messaoudi — 5 cours</div>
+        <div class="table-wrap">
+        <table class="detail-table" style="width:100%;border-collapse:collapse;background:#0f172a;border:1px solid #1e293b;border-radius:12px;overflow:hidden;margin-bottom:24px">
+            <thead>
+                <tr style="background:#1e293b">
+                    <th style="padding:10px 14px;text-align:left;color:#94a3b8;font-size:11px;text-transform:uppercase">Eleve</th>
+                    <th style="padding:10px 14px;text-align:left;color:#94a3b8;font-size:11px;text-transform:uppercase">Ce qui a ete vu</th>
+                    <th style="padding:10px 14px;text-align:center;color:#94a3b8;font-size:11px;text-transform:uppercase">Video</th>
+                </tr>
+            </thead>
+            <tbody><tr>
+                <td data-label="Eleve" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#f8fafc;font-weight:600">Mohammed Martenot</td>
+                <td data-label="Ce qui a ete vu" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#94a3b8;font-size:13px">N1A Examen S1 S2 -- 40/40 + S3 textes</td>
+                <td data-label="Video" style="padding:12px 14px;border-bottom:1px solid #1e293b;text-align:center"><a href="https://fathom.video/share/Ci-EEEHHdBKUM5VFVgqVy5BXGZ-bS1xd" target="_blank" style="color:#3b82f6;text-decoration:none;font-size:12px;font-weight:600">Voir</a></td>
+            </tr><tr>
+                <td data-label="Eleve" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#f8fafc;font-weight:600">Oumar Cisse</td>
+                <td data-label="Ce qui a ete vu" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#94a3b8;font-size:13px">N0S1 exo 1/2</td>
+                <td data-label="Video" style="padding:12px 14px;border-bottom:1px solid #1e293b;text-align:center"><a href="https://fathom.video/share/y74yw-vg85bLCMo8v8geTMNavJyQmG9z" target="_blank" style="color:#3b82f6;text-decoration:none;font-size:12px;font-weight:600">Voir</a></td>
+            </tr><tr>
+                <td data-label="Eleve" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#f8fafc;font-weight:600">Abdourahmane Haidara</td>
+                <td data-label="Ce qui a ete vu" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#94a3b8;font-size:13px">N0S4 revision ecriture</td>
+                <td data-label="Video" style="padding:12px 14px;border-bottom:1px solid #1e293b;text-align:center"><a href="https://fathom.video/share/oyXnPemH6muzr7Mfs1ZPuz3Z9LmfSyzs" target="_blank" style="color:#3b82f6;text-decoration:none;font-size:12px;font-weight:600">Voir</a></td>
+            </tr><tr>
+                <td data-label="Eleve" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#f8fafc;font-weight:600">Ounis Ghayas</td>
+                <td data-label="Ce qui a ete vu" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#94a3b8;font-size:13px">N1A S7 textes</td>
+                <td data-label="Video" style="padding:12px 14px;border-bottom:1px solid #1e293b;text-align:center"><a href="https://fathom.video/share/w5cavPKbDxzvbFSjvJszhX5N-Ahd7Rar" target="_blank" style="color:#3b82f6;text-decoration:none;font-size:12px;font-weight:600">Voir</a></td>
+            </tr><tr>
+                <td data-label="Eleve" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#f8fafc;font-weight:600">Zakaria Ferkous</td>
+                <td data-label="Ce qui a ete vu" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#94a3b8;font-size:13px">N0S2 tantwin fath 1/2</td>
+                <td data-label="Video" style="padding:12px 14px;border-bottom:1px solid #1e293b;text-align:center"><a href="https://fathom.video/share/EoVbA_vmpcdc9bg6Qy-tzZj2KN5eQDJK" target="_blank" style="color:#3b82f6;text-decoration:none;font-size:12px;font-weight:600">Voir</a></td>
+            </tr></tbody>
+        </table>
+        </div>
+        <div class="section-title" style="color:#f59e0b">Toufik Elarrim — 4 cours</div>
+        <div class="table-wrap">
+        <table class="detail-table" style="width:100%;border-collapse:collapse;background:#0f172a;border:1px solid #1e293b;border-radius:12px;overflow:hidden;margin-bottom:24px">
+            <thead>
+                <tr style="background:#1e293b">
+                    <th style="padding:10px 14px;text-align:left;color:#94a3b8;font-size:11px;text-transform:uppercase">Eleve</th>
+                    <th style="padding:10px 14px;text-align:left;color:#94a3b8;font-size:11px;text-transform:uppercase">Ce qui a ete vu</th>
+                    <th style="padding:10px 14px;text-align:center;color:#94a3b8;font-size:11px;text-transform:uppercase">Video</th>
+                </tr>
+            </thead>
+            <tbody><tr>
+                <td data-label="Eleve" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#f8fafc;font-weight:600">Issa SISSOKO</td>
+                <td data-label="Ce qui a ete vu" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#94a3b8;font-size:13px">Appel d'onbording</td>
+                <td data-label="Video" style="padding:12px 14px;border-bottom:1px solid #1e293b;text-align:center"><a href="https://fathom.video/share/MTrMW1PWdmBMtx7xKZ1ydRpj1zG_Mtbd" target="_blank" style="color:#f59e0b;text-decoration:none;font-size:12px;font-weight:600">Voir</a></td>
+            </tr><tr>
+                <td data-label="Eleve" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#f8fafc;font-weight:600">Madiba SYLLA</td>
+                <td data-label="Ce qui a ete vu" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#94a3b8;font-size:13px">Appel d'onbording</td>
+                <td data-label="Video" style="padding:12px 14px;border-bottom:1px solid #1e293b;text-align:center"><a href="https://fathom.video/share/U6248Np28qkvJ_zcxf8RxZ6yzu2nt9Pe" target="_blank" style="color:#f59e0b;text-decoration:none;font-size:12px;font-weight:600">Voir</a></td>
+            </tr><tr>
+                <td data-label="Eleve" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#f8fafc;font-weight:600">Tarik LAATEUR</td>
+                <td data-label="Ce qui a ete vu" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#94a3b8;font-size:13px">Niveau 1b / examen thème 9 et 10 / 36/40</td>
+                <td data-label="Video" style="padding:12px 14px;border-bottom:1px solid #1e293b;text-align:center"><a href="https://fathom.video/share/Y_qxwzMYekpwxfVcTbGd9_ifcnN_PWmm" target="_blank" style="color:#f59e0b;text-decoration:none;font-size:12px;font-weight:600">Voir</a></td>
+            </tr><tr>
+                <td data-label="Eleve" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#f8fafc;font-weight:600">Reda KADDOURI</td>
+                <td data-label="Ce qui a ete vu" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#94a3b8;font-size:13px"><span style="color:#475569">—</span></td>
+                <td data-label="Video" style="padding:12px 14px;border-bottom:1px solid #1e293b;text-align:center"><a href="https://fathom.video/share/ztKpus7n_LB4KxzemQvpzL7oa8tL-Pmb" target="_blank" style="color:#f59e0b;text-decoration:none;font-size:12px;font-weight:600">Voir</a></td>
+            </tr></tbody>
+        </table>
+        </div>
+        <div class="section-title" style="color:#a855f7">Mehdi Bourouaieh — 2 cours</div>
+        <div class="table-wrap">
+        <table class="detail-table" style="width:100%;border-collapse:collapse;background:#0f172a;border:1px solid #1e293b;border-radius:12px;overflow:hidden;margin-bottom:24px">
+            <thead>
+                <tr style="background:#1e293b">
+                    <th style="padding:10px 14px;text-align:left;color:#94a3b8;font-size:11px;text-transform:uppercase">Eleve</th>
+                    <th style="padding:10px 14px;text-align:left;color:#94a3b8;font-size:11px;text-transform:uppercase">Ce qui a ete vu</th>
+                    <th style="padding:10px 14px;text-align:center;color:#94a3b8;font-size:11px;text-transform:uppercase">Video</th>
+                </tr>
+            </thead>
+            <tbody><tr>
+                <td data-label="Eleve" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#f8fafc;font-weight:600">mohamed</td>
+                <td data-label="Ce qui a ete vu" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#94a3b8;font-size:13px">miftah 0 saison 4</td>
+                <td data-label="Video" style="padding:12px 14px;border-bottom:1px solid #1e293b;text-align:center"><a href="https://fathom.video/share/ymrwK3Hnxnx_mk6xykz_tcHzpMuENhi6" target="_blank" style="color:#a855f7;text-decoration:none;font-size:12px;font-weight:600">Voir</a></td>
+            </tr><tr>
+                <td data-label="Eleve" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#f8fafc;font-weight:600">yerim</td>
+                <td data-label="Ce qui a ete vu" style="padding:12px 14px;border-bottom:1px solid #1e293b;color:#94a3b8;font-size:13px">miftah 0 saison 4</td>
+                <td data-label="Video" style="padding:12px 14px;border-bottom:1px solid #1e293b;text-align:center"><a href="https://fathom.video/share/ZwhZ2owy34dszBivrVWuBdF82UuxxmEM" target="_blank" style="color:#a855f7;text-decoration:none;font-size:12px;font-weight:600">Voir</a></td>
+            </tr></tbody>
+        </table>
+        </div>
+
+    <div style="text-align:center;padding:32px 0 16px;color:#334155;font-size:12px">
+        Source : Google Sheets profs — Genere automatiquement — ASCENSIA Marketing
+    </div>
+
+</div>
+</body>
+</html>
